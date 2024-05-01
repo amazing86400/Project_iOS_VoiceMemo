@@ -11,6 +11,13 @@
 		E08906422BD8A01D009A5683 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08906412BD8A01D009A5683 /* ContentView.swift */; };
 		E08906442BD8A020009A5683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08906432BD8A020009A5683 /* Assets.xcassets */; };
 		E08906472BD8A020009A5683 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08906462BD8A020009A5683 /* Preview Assets.xcassets */; };
+		E089064E2BD8A18F009A5683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E089064D2BD8A18F009A5683 /* LaunchScreen.storyboard */; };
+		E08906592BDA21A6009A5683 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08906582BDA21A6009A5683 /* Color+Extensions.swift */; };
+		E089065C2BDA249A009A5683 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E089065B2BDA249A009A5683 /* OnboardingContent.swift */; };
+		E089065E2BDA2506009A5683 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E089065D2BDA2506009A5683 /* OnboardingViewModel.swift */; };
+		E08906612BDA268B009A5683 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08906602BDA268B009A5683 /* OnboardingView.swift */; };
+		E08906632BDA4575009A5683 /* OnboardingContent2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08906622BDA4575009A5683 /* OnboardingContent2.swift */; };
+		E08906652BDA4A89009A5683 /* OnboardingViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08906642BDA4A89009A5683 /* OnboardingViewModel2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		E08906412BD8A01D009A5683 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E08906432BD8A020009A5683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E08906462BD8A020009A5683 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E089064D2BD8A18F009A5683 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E08906582BDA21A6009A5683 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		E089065B2BDA249A009A5683 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		E089065D2BDA2506009A5683 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		E08906602BDA268B009A5683 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E08906622BDA4575009A5683 /* OnboardingContent2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent2.swift; sourceTree = "<group>"; };
+		E08906642BDA4A89009A5683 /* OnboardingViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +65,11 @@
 		E089063E2BD8A01D009A5683 /* voiceMemo */ = {
 			isa = PBXGroup;
 			children = (
-				E089063F2BD8A01D009A5683 /* voiceMemoApp.swift */,
+				E08906512BD8A278009A5683 /* App */,
+				E08906522BD8A403009A5683 /* Core */,
+				E08906532BD8A410009A5683 /* Component */,
+				E08906542BD8A419009A5683 /* Feature */,
+				E08906552BD8A430009A5683 /* Model */,
 				E08906412BD8A01D009A5683 /* ContentView.swift */,
 				E08906432BD8A020009A5683 /* Assets.xcassets */,
 				E08906452BD8A020009A5683 /* Preview Content */,
@@ -65,6 +83,81 @@
 				E08906462BD8A020009A5683 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E08906512BD8A278009A5683 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E089063F2BD8A01D009A5683 /* voiceMemoApp.swift */,
+				E089064D2BD8A18F009A5683 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E08906522BD8A403009A5683 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E08906572BDA2191009A5683 /* Service */,
+				E08906562BDA2182009A5683 /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E08906532BD8A410009A5683 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		E08906542BD8A419009A5683 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				E089065F2BDA265D009A5683 /* Onboarding */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		E08906552BD8A430009A5683 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E089065A2BDA247B009A5683 /* Onboarding */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E08906562BDA2182009A5683 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E08906582BDA21A6009A5683 /* Color+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E08906572BDA2191009A5683 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E089065A2BDA247B009A5683 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E089065B2BDA249A009A5683 /* OnboardingContent.swift */,
+				E08906622BDA4575009A5683 /* OnboardingContent2.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E089065F2BDA265D009A5683 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E08906602BDA268B009A5683 /* OnboardingView.swift */,
+				E089065D2BDA2506009A5683 /* OnboardingViewModel.swift */,
+				E08906642BDA4A89009A5683 /* OnboardingViewModel2.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E089064E2BD8A18F009A5683 /* LaunchScreen.storyboard in Resources */,
 				E08906472BD8A020009A5683 /* Preview Assets.xcassets in Resources */,
 				E08906442BD8A020009A5683 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08906632BDA4575009A5683 /* OnboardingContent2.swift in Sources */,
+				E089065E2BDA2506009A5683 /* OnboardingViewModel.swift in Sources */,
+				E089065C2BDA249A009A5683 /* OnboardingContent.swift in Sources */,
+				E08906592BDA21A6009A5683 /* Color+Extensions.swift in Sources */,
+				E08906612BDA268B009A5683 /* OnboardingView.swift in Sources */,
 				E08906422BD8A01D009A5683 /* ContentView.swift in Sources */,
+				E08906652BDA4A89009A5683 /* OnboardingViewModel2.swift in Sources */,
 				E08906402BD8A01D009A5683 /* voiceMemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,9 +377,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +388,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goldenplanet.voiceMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,9 +410,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +421,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.goldenplanet.voiceMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
